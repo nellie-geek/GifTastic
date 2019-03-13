@@ -39,10 +39,10 @@ var fails = ["winter", "snow", "walking", "football", "cheerleading", "parking",
             if (state === "still") {
                 $(this).attr("src", $(this).attr("data-animate"));
                 $(this).attr("data-state", "animate");
-              } else {
+            } else {
                 $(this).attr("src", $(this).attr("data-still"));
                 $(this).attr("data-state", "still");
-              }
+            }
         });
 
     function renderButtons() {
@@ -55,14 +55,14 @@ var fails = ["winter", "snow", "walking", "football", "cheerleading", "parking",
             a.attr("data-name", fails[i]);
             a.text(fails[i]);
             $("#button-view").append(a);
-        }
-    };
+        }};
 
     $("#add-fail").on("click", function(event) {
         event.preventDefault();
-        var fail = $("#fail-input").val().trim();
+        var fail = $("#fail").val();
         fails.push(fail);
         renderButtons();
+        $("#fail").val("");
     });
 
     $("#button-view").on("click", ".fail", displayFailImg);

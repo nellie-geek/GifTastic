@@ -2,16 +2,50 @@
     box-sizing: border-box
 }
 
-.container {
+* {
     background: darkgrey;
 }
 
 h1 {
-    background: slategray;
+    text-align: center;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.fail #button-view {
-    background-color: darkmagenta;
+
+.fail {
+    background-color: rgb(85, 30, 85);
+    box-shadow: 5px;
     color: white;
     margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+
+}
+
+.container{
+    width: 70%;
+}
+
+#add-fail {
+    background: black;
+    color: rgb(201, 167, 167);
+    padding: 10px;
+    box-shadow: 5px;
+    font-size: 18px;
+    margin-top: 10px;
+    
+}
+
+#fail {
+    background: white;
+    width: 250px;
+}
+
+#fails-form {
+    position: fixed;
+    font-size: 24px;
+    top: 50px;
+    right: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
