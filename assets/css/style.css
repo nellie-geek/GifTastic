@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box
+}
+
+.container {
+    background: darkgrey;
+}
+
+h1 {
+    background: slategray;
+}
+.fail #button-view {
+    background-color: darkmagenta;
+    color: white;
+    margin: 10px;
+
+}
